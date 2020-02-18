@@ -1,0 +1,16 @@
+{
+  "name": "07multeruploader",
+  "version": "1.0.0",
+  "description": "a muiter file uploader",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "author": "ganaa",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^3.0.1",
+    "express": "^4.17.1",
+    "multer": "^1.4.2"
+  }
+}
