@@ -2,6 +2,8 @@ var express = require("express");
 var passport = require("passport");
 var Strategy = require("passport-facebook").Strategy;
 
+var port = process.env.PORT || 3000 ;
+
 passport.use(new Strategy({
     clientID:"1541417752701163",
     clientSecret:"c567d545fa7711edb24ea85463cbac96",
@@ -77,5 +79,5 @@ app.get('/login/facebook/callback',
 app.get('/profile',require('connect-ensure-login').ensureLoggedIn(),(req,res)=>{
     res.render('profile',{user:req.use});
 });
-app.listen('3000');
+app.listen(port);
 
