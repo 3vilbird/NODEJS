@@ -5,8 +5,8 @@ var Strategy = require("passport-facebook").Strategy;
 var port = process.env.PORT || 3000 ;
 
 passport.use(new Strategy({
-    clientID:"1541417752701163",
-    clientSecret:"c567d545fa7711edb24ea85463cbac96",
+    clientID:"replace with your id",
+    clientSecret:"replace with your secret",
     callbackURL:"http://localhost:3000/login/facebook/return"
 }, function(accessToken,rereshToken,profile,cb)
     {
